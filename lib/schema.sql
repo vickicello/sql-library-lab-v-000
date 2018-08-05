@@ -22,7 +22,7 @@ CREATE TABLE books (
   series_id INTEGER
 );
 
-CREATE TABLE books (
+CREATE TABLE characters (
   id INTEGER PRIMARY KEY,
   name TEXT,
   motto TEXT,
@@ -32,7 +32,7 @@ CREATE TABLE books (
 );
 
 CREATE TABLE character_books (
-  id INTEGER PRIMARY KEY, 
-  book_id INTEGER, 
+  id INTEGER PRIMARY KEY,
+  book_id INTEGER,
   character_id INTEGER
 );
