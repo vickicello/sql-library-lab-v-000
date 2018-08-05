@@ -15,10 +15,14 @@ INSERT INTO books (title, year, series_id) VALUES ('The Predator', 1996, 2);
 INSERT INTO books (title, year, series_id) VALUES ('The Absolute', 2001, 2);
 
 
-3 books in each series
-8 characters
-4 characters in each series
-of each of those 4, make 2 in all of the books in a series, and 2 in just 1 book in a series
-Note you will need to insert values into your character_books join table
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Harry', 'I am not special', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Hermione', 'If you had only read A History of Magic, you would know this already', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Ron', 'I hate spiders!', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Dumbledore', 'There are all kinds of courage', 'human', 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Marco', 'I am a duck', 'animorph', 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Tobias', 'I am a squid', 'animorph', 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Rachel', 'I am a gorilla', 'animorph', 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Marco', 'I am a duck', 'animorph', 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ('Cassie', 'I am a wolf', 'animorph', 2, 2);
 
-Feel free to make these up if you don't know any Fantasy series :)
+INSERT INTO character_books (book_id, character_id) VALUES (1, 1), (1, 2), (1, 3), (2, 4), (3, 2), (2, 2), (2, 3), (2, 1), (4, 5), (5, 5), (6, 5), (4, 6), (5, 6), (6, 6), (5, 7), (4, 8);
